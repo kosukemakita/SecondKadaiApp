@@ -83,26 +83,32 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-8x-CVs">
-                                <rect key="frame" x="153" y="408" width="108" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-8x-CVs">
+                                <rect key="frame" x="70" y="408" width="274" height="30"/>
                                 <state key="normal" title="入力画面に戻る"/>
+                                <connections>
+                                    <segue destination="gWC-jd-d6U" kind="unwind" unwindAction="unwind:" id="2kY-Gc-az3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="bottom" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="500" id="Z9e-Ud-Yu5"/>
+                            <constraint firstItem="VlS-8x-CVs" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="70" id="bBp-YZ-4t3"/>
                             <constraint firstItem="VVv-4l-auo" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="80" id="cdG-jp-HRj"/>
                             <constraint firstItem="VVv-4l-auo" firstAttribute="top" secondItem="eGc-s2-e95" secondAttribute="top" constant="100" id="dPl-vc-6pG"/>
                             <constraint firstItem="VlS-8x-CVs" firstAttribute="top" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="100" id="h6G-Pf-XNb"/>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VVv-4l-auo" secondAttribute="trailing" constant="80" id="lks-oO-Yll"/>
+                            <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VlS-8x-CVs" secondAttribute="trailing" constant="70" id="unV-aU-IZE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGc-s2-e95"/>
                     </view>
                     <navigationItem key="navigationItem" id="hpV-xJ-5Fg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQY-sT-FVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gWC-jd-d6U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="779" y="-46"/>
+            <point key="canvasLocation" x="778.26086956521749" y="-46.205357142857139"/>
         </scene>
     </scenes>
 </document>
