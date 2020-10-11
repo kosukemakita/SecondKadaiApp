@@ -30,6 +30,9 @@
                                 <rect key="frame" x="30" y="224" width="354" height="209"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="handle:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ndU-BO-ytx"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-km-Wxc" userLabel="EnterButton">
                                 <rect key="frame" x="100" y="532" width="214" height="30"/>
@@ -63,6 +66,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textfield" destination="ExF-X4-HYm" id="LmI-xh-92q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,10 +82,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの名前は" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-4l-auo">
-                                <rect key="frame" x="80" y="100" width="254" height="208"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは、〇〇さん" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-4l-auo" userLabel="NameLabel">
+                                <rect key="frame" x="30" y="100" width="354" height="208"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -95,15 +101,18 @@
                         <constraints>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="bottom" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="500" id="Z9e-Ud-Yu5"/>
                             <constraint firstItem="VlS-8x-CVs" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="70" id="bBp-YZ-4t3"/>
-                            <constraint firstItem="VVv-4l-auo" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="80" id="cdG-jp-HRj"/>
+                            <constraint firstItem="VVv-4l-auo" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="30" id="cdG-jp-HRj"/>
                             <constraint firstItem="VVv-4l-auo" firstAttribute="top" secondItem="eGc-s2-e95" secondAttribute="top" constant="100" id="dPl-vc-6pG"/>
                             <constraint firstItem="VlS-8x-CVs" firstAttribute="top" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="100" id="h6G-Pf-XNb"/>
-                            <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VVv-4l-auo" secondAttribute="trailing" constant="80" id="lks-oO-Yll"/>
+                            <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VVv-4l-auo" secondAttribute="trailing" constant="30" id="lks-oO-Yll"/>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VlS-8x-CVs" secondAttribute="trailing" constant="70" id="unV-aU-IZE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGc-s2-e95"/>
                     </view>
                     <navigationItem key="navigationItem" id="hpV-xJ-5Fg"/>
+                    <connections>
+                        <outlet property="label" destination="VVv-4l-auo" id="BRo-hn-tFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQY-sT-FVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gWC-jd-d6U" userLabel="Exit" sceneMemberID="exit"/>
