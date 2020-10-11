@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="handle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQR-Pa-YKJ"/>
-                                    <segue destination="I7g-aQ-TKR" kind="show" id="pTC-7T-nV9"/>
+                                    <segue destination="I7g-aQ-TKR" kind="show" id="MOo-Rj-HlE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="feu-Bg-yR2">
             <objects>
-                <viewController id="I7g-aQ-TKR" sceneMemberID="viewController">
+                <viewController id="I7g-aQ-TKR" customClass="ResultViewController" customModule="SeondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r1c-P1-pMF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,20 +83,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk2-T9-JAI">
-                                <rect key="frame" x="150" y="408" width="114" height="30"/>
-                                <state key="normal" title="戻る"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-8x-CVs">
+                                <rect key="frame" x="153" y="408" width="108" height="30"/>
+                                <state key="normal" title="入力画面に戻る"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kk2-T9-JAI" firstAttribute="top" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="100" id="Myv-fg-CPF"/>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="bottom" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="500" id="Z9e-Ud-Yu5"/>
                             <constraint firstItem="VVv-4l-auo" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="80" id="cdG-jp-HRj"/>
                             <constraint firstItem="VVv-4l-auo" firstAttribute="top" secondItem="eGc-s2-e95" secondAttribute="top" constant="100" id="dPl-vc-6pG"/>
-                            <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="kk2-T9-JAI" secondAttribute="trailing" constant="150" id="kJx-jD-9Ke"/>
+                            <constraint firstItem="VlS-8x-CVs" firstAttribute="top" secondItem="VVv-4l-auo" secondAttribute="bottom" constant="100" id="h6G-Pf-XNb"/>
                             <constraint firstItem="eGc-s2-e95" firstAttribute="trailing" secondItem="VVv-4l-auo" secondAttribute="trailing" constant="80" id="lks-oO-Yll"/>
-                            <constraint firstItem="kk2-T9-JAI" firstAttribute="leading" secondItem="eGc-s2-e95" secondAttribute="leading" constant="150" id="nGd-DX-iHa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGc-s2-e95"/>
                     </view>
